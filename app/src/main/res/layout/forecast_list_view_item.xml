@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="90dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/forecast_weather_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@android:drawable/screen_background_dark_transparent" />
+
+        <TextView
+            android:id="@+id/forecast_measuring_time_value_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forecast_weather_image"
+            android:layout_centerHorizontal="true"
+            tools:text="2017-02-16\n12:00:00"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/forecast_weather_info_linearLayout">
+
+                <ImageView
+                    style="@style/forecast_weather_info_image"
+                    android:src="@drawable/temperature" />
+
+                <TextView
+                    android:id="@+id/forecast_temperature_value_textView"
+                    style="@style/forecast_weather_info_values_textView"
+                    tools:text="16 C" />
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/forecast_weather_info_linearLayout">
+
+                <ImageView
+                    style="@style/forecast_weather_info_image"
+                    android:src="@drawable/pressure" />
+
+                <TextView
+                    android:id="@+id/forecast_pressure_value_textView"
+                    style="@style/forecast_weather_info_values_textView"
+                    tools:text="10 kPa" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/forecast_weather_info_linearLayout">
+
+                <ImageView
+                    style="@style/forecast_weather_info_image"
+                    android:src="@drawable/humidity" />
+
+                <TextView
+                    android:id="@+id/forecast_humidity_value_textView"
+                    style="@style/forecast_weather_info_values_textView"
+                    tools:text="75%" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/forecast_weather_info_linearLayout">
+
+                <ImageView
+                    style="@style/forecast_weather_info_image"
+                    android:src="@drawable/wind_speed" />
+
+                <TextView
+                    android:id="@+id/forecast_wind_speed_value_textView"
+                    style="@style/forecast_weather_info_values_textView"
+                    tools:text="10 kph" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/forecast_weather_info_linearLayout">
+
+                <ImageView
+                    style="@style/forecast_weather_info_image"
+                    android:src="@drawable/wind_direction" />
+
+                <TextView
+                    android:id="@+id/forecast_wind_direction_value_textView"
+                    style="@style/forecast_weather_info_values_textView"
+                    tools:text="6 deg" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/forecast_weather_info_linearLayout">
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

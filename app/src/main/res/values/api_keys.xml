@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="open_weather_map_appid">ead5fbdc7bdc423d9a059550a7f96641</string>
+    <string name="google_maps">AIzaSyCP9T996Q6pZ2DCt-bucimFR9J5C32oUSA</string>
+</resources>
